@@ -4,12 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A: Energy</title>
+  <title>Energy - P</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <div class="video-container paused" data-volume-level="high">
+
+    <div class="popup-container">
+      <span class="popup-text">
+        Hello! Welcome to our user study!
+
+        When you are ready click on the button below to start the live class. 
+        Once the lecture starts, you cannot pause or stop it as it is simulating a live lecture.
+        </br>
+        
+      </span>
+      <button class="popup-button">Start!</button>
+    </div>
+
+
     <div class="email-popup">
       <img class="mail-icon" src="assets/mail.png">
     </div>
@@ -109,12 +123,11 @@
         <span></span>
         <input type="checkbox" id="answer" value="">
       </div>
-      <span class="async-subtitle-text"></span>
+      <span class="async-subtitle-text" style="display: none"></span>
 
       <div class="async-controls">
         <div class="close-btn"><img src="assets/close-btn.png" class="btn-img"></div>
         <div class="skip-back-btn"><img src="assets/skip-back.png" class="btn-img"></div>
-        <div class="play-btn"><img src="assets/pause-btn.png" class="btn-img"></div>
         <div class="skip-forward-btn"><img src="assets/skip-forward.png" class="btn-img"></div>
         <div class="speed-container">
           <span class="speed-text">1.0</span>
@@ -124,9 +137,10 @@
         <img class="audio-btn-main" src="assets/audio.png">
         <span class="audio-btn-text"></span>
         <input class="volume-slider" type="range" min="0" max="1" step="any" value="1">
+        <div class="play-btn"><img src="assets/pause-btn.png" class="btn-img" style="display: none"></div>
 
 
-        <div class="alert-tool-bar">
+        <div class="alert-tool-bar" style="display:none">
           <div class="slider-btn">
           <div class="slider">
             <img src="assets/flag.png" class="slider-img">
@@ -168,7 +182,7 @@
       <track kind="captions" srclang="en" src="assets/subtitles.vtt">
     </video>
     <span class="small-window-prompt"></span>
-    <span class="sync-subtitle-text"></span>
+    <span class="sync-subtitle-text" style="display: none"></span>
     <span class="live-label">LIVE</span>
     <img class="audio-btn-live" src="assets/audio.png">
     <div class="minimize-btn">
