@@ -103,9 +103,9 @@ function update(){
   updateSlideThumbs()
   updateTimer()
   checkFlagButton()
-  addSubtitles(syncVideo, syncSubtitle)
-  addSubtitles(video, asyncSubtitle)
-  updateTranscript()
+  // addSubtitles(syncVideo, syncSubtitle)
+  // addSubtitles(video, asyncSubtitle)
+  // updateTranscript()
   updateTimeProgress()
   updatePopup()
 }
@@ -1385,10 +1385,10 @@ function handlePopupButton(){
 //----- original video player
 document.addEventListener("keydown", e => {
   const tagName = document.activeElement.tagName.toLowerCase()
-  if(e.keyCode == 32){
-  	togglePlayPause()
-  	return
-  }
+  // if(e.keyCode == 32){
+  // 	togglePlayPause()
+  // 	return
+  // }
   if (tagName === "input") return
 
   switch (e.key.toLowerCase()) {
