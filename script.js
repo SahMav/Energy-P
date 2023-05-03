@@ -1412,9 +1412,9 @@ document.addEventListener("keydown", e => {
     case "m":
       toggleMute()
       break
-    case "space":
-      togglePlayPause()
-      break
+    // case "space":
+    //   togglePlayPause()
+    //   break
     case "arrowleft":
     case "j":
       skipBack()
