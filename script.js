@@ -640,7 +640,7 @@ function removeCatchUpLine(){
 // asynchronous controls event handling
 
 playBtn.addEventListener("click", togglePlayPause)
-video.addEventListener("click", togglePlayPause)
+// video.addEventListener("click", togglePlayPause)
 
 var audioBtnisLive = false
 
